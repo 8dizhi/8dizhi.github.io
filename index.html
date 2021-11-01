@@ -4,38 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Slider Captcha Demo</title>
+    <title>滑一滑</title>
     <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.bootcss.com/font-awesome/5.7.2/css/all.min.css" rel="stylesheet">
     <link href="./disk/slidercaptcha.css" rel="stylesheet" />
-    <style>
-        .slidercaptcha {
-            margin: 0 auto;
-            width: 314px;
-            height: 286px;
-            border-radius: 4px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.125);
-            margin-top: 40px;
-        }
-
-            .slidercaptcha .card-body {
-                padding: 1rem;
-            }
-
-            .slidercaptcha canvas:first-child {
-                border-radius: 4px;
-                border: 1px solid #e6e8eb;
-            }
-
-            .slidercaptcha.card .card-header {
-                background-image: none;
-                background-color: rgba(0, 0, 0, 0.03);
-            }
-
-            .refreshIcon {
-                top: -54px;
-            }
-    </style>
+    <style>.slidercaptcha{width:314px;height:286px;border-radius:4px;box-shadow:0 0 10px rgba(0,0,0,.125);margin:40px auto 0}.slidercaptcha .card-body{padding:1rem}.slidercaptcha canvas:first-child{border-radius:4px;border:1px solid #e6e8eb}.slidercaptcha.card .card-header{background-image:none;background-color:rgba(0,0,0,.03)}.refreshIcon{top:-54px}</style>
 </head>
 <body>
     <div class="container-fluid">
@@ -56,10 +29,10 @@
         $('#captcha').sliderCaptcha({
             repeatIcon: 'fa fa-redo',
             setSrc: function () {
-                return 'https://8dizhi.github.io/images/Pic' + Math.round(Math.random() * 4) + '.jpg';
+                return 'https://picsum.photos/seed/' + Math.round(Math.random() * 18) + '/280/150.jpg';
             },
             onSuccess: function () {
-                window.location.href = 'https://gitee.com/LongbowEnterprise/SliderCaptcha';
+                window.location.href = 'https://xxhs.bitbucket.io';
             }
         });
     </script>    

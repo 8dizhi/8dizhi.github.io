@@ -1,4 +1,4 @@
-﻿(function ($) {
+(function ($) {
     'use strict';
 
     var SliderCaptcha = function (element, options) {
@@ -9,7 +9,7 @@
     };
 
     SliderCaptcha.VERSION = '1.0';
-    SliderCaptcha.Author = 'argo@163.com';
+    SliderCaptcha.Author = 'Argo';
     SliderCaptcha.DEFAULTS = {
         width: 280,     // canvas宽度
         height: 155,    // canvas高度
@@ -263,7 +263,7 @@
         this.slider.addEventListener('mousedown', handleDragStart);
         this.slider.addEventListener('touchstart', handleDragStart);
         document.addEventListener('mousemove', handleDragMove);
-        document.addEventListener('touchmove', handleDragMove);
+        document.addEventListener('touchmove', handleDragMove,{passive:false});
         document.addEventListener('mouseup', handleDragEnd);
         document.addEventListener('touchend', handleDragEnd);
 
